@@ -426,10 +426,29 @@
             </li>
           </ul>
         </div>
+        <div class="footer-box-form">
+          <p class="input-footer-title">Subscribe</p>
+          <form class="footer-form">
+            <label class="footer-label">
+              <input
+                type="email"
+                placeholder="E-mail"
+                class="footer-input"
+                name="footer-email"
+              />
+            </label>
+            <button type="submit" class="footer-btn">
+              Subscribe
+              <svg class="footer__btn-svg" width="24" height="24">
+                <use href="./images/icons.svg#tg"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
-    
-<!-- Modal -->
+
+    <!-- Modal -->
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal modal-container">
@@ -484,22 +503,35 @@
           </div>
           <div class="textarea-box">
             <label class="modal-name" for="user-comment">Comment</label>
-            <textarea id="user-comment" class="modal-textarea" placeholder="Text input"
-						name="user-comment"></textarea>
+            <textarea
+              id="user-comment"
+              class="modal-textarea"
+              placeholder="Text input"
+              name="user-comment"
+            ></textarea>
           </div>
           <div class="checkbox-box">
-					<input class="privacy-checkbox visually-hidden" id="user-privacy" type="checkbox" name="user-privacy"
-						value="true" />
-					<label class="privacy-label" for="user-privacy">
-						<span class="checkbox-box-svg">
-							<svg class="checkbox-svg" width="10" height="8">
-								<use href="./images/icons.svg#stick"></use>
-							</svg>
-						</span>
-						I accept the terms and conditions of the<a href="#" class="privacy-link link">Privacy Policy</a>
-					</label>
-				</div>
-				<button class="modal-btn" type="submit">Send</button>
+            <input
+              class="privacy-checkbox visually-hidden"
+              id="user-privacy"
+              type="checkbox"
+              name="user-privacy"
+              value="true"
+            />
+            <label class="privacy-label" for="user-privacy">
+              <span class="checkbox-box-svg">
+                <svg class="checkbox-svg" width="10" height="8">
+                  <use href="./images/icons.svg#stick"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the<a
+                href="#"
+                class="privacy-link link"
+                >Privacy Policy</a
+              >
+            </label>
+          </div>
+          <button class="modal-btn" type="submit">Send</button>
         </form>
       </div>
     </div>
